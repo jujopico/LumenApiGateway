@@ -22,5 +22,9 @@ The Lumen framework is open-sourced software licensed under the [MIT license](ht
 
 # LumenApiGateway
 
+* AuthorsApi: `php -S localhost:8000 -t public/`
+  AuthorsApi: `php -S localhost:8001 -t public/`
+  ApiGateway: `php -S localhost:8002 -t public/`
+
 * One of the principla purposes of the gateway is to conceal the internals or a business to obtain the data and return it to the external clients or external systems. For these we need to get the capability to consume the services or any kind of service to our Api and the best way is to use our library for PHP called `guzzlehttp`
 `composer require guzzlehttp/guzzle`
