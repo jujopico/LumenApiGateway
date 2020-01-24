@@ -19,4 +19,8 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
 # LumenApiGateway
+
+* One of the principla purposes of the gateway is to conceal the internals or a business to obtain the data and return it to the external clients or external systems. For these we need to get the capability to consume the services or any kind of service to our Api and the best way is to use our library for PHP called `guzzlehttp`
+`composer require guzzlehttp/guzzle`
