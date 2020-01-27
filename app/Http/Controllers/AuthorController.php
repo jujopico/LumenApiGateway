@@ -43,7 +43,7 @@ class AuthorController extends Controller
      */
     public function store(Request $request)
     {
-        return $this->successResponse($this->authorService->createAuthor($request->all(), Response::HTTP_CREATED));
+        return $this->successResponse($this->authorService->createAuthor($request->all(),Response::HTTP_CREATED));
     }
 
     /**
@@ -52,7 +52,7 @@ class AuthorController extends Controller
      */
     public function show($author)
     {
-        return $this->successResponse($this->authorService->obtainAuthor($author));
+
     }
 
     /**
@@ -61,7 +61,7 @@ class AuthorController extends Controller
      */
     public function update(Request $request, $author)
     {
-        return $this->successResponse($this->authorService->editAuthor($request->all(), $author));
+
     }
 
     /**
@@ -70,6 +70,6 @@ class AuthorController extends Controller
      */
     public function destroy($author)
     {
-        return $this->successResponse($this->authorService->deleteAuthor($author));
+
     }
 }
