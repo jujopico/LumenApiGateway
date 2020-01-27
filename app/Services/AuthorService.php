@@ -68,6 +68,6 @@ class AuthorService
      */
     public function deleteAuthor($author)
     {
-
+        return $this->performRequest('DELETE', "/authors/{$author}");
     }
 }
