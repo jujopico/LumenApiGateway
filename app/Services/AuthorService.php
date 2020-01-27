@@ -59,7 +59,7 @@ class AuthorService
      */
     public function editAuthor($data, $author)
     {
-
+        return $this->performRequest('PUT', "/authors/{$author}", $data);
     }
 
     /**
