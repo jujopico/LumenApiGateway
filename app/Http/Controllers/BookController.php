@@ -42,7 +42,7 @@ class BookController extends Controller
      */
     public function index()
     {
-
+        return $this->successResponse($this->bookService->obtainBooks());
     }
 
     /**
@@ -51,7 +51,9 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
+        $this->authorService->obtainAuthor($request->author_id);
 
+        return $this->successResponse($this->bookService->createBook($request->all(), Response::HTTP_CREATED));
     }
 
     /**
@@ -60,7 +62,7 @@ class BookController extends Controller
      */
     public function show($book)
     {
-
+        return $this->successResponse($this->bookService->obtainBook($book));
     }
 
     /**
@@ -69,7 +71,7 @@ class BookController extends Controller
      */
     public function update(Request $request, $book)
     {
-
+        return $this->successResponse($this->bookService->editBook($request->all(), $book));
     }
 
     /**
@@ -78,5 +80,6 @@ class BookController extends Controller
      */
     public function destroy($book)
     {
+        return $this->successResponse($this->bookService->deleteBook($book));
     }
 }
