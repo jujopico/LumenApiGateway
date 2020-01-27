@@ -51,8 +51,6 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
-        $this->authorService->obtainAuthor($request->author_id);
-
         return $this->successResponse($this->bookService->createBook($request->all(), Response::HTTP_CREATED));
     }
 
