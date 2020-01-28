@@ -1,3 +1,11 @@
+# Under Construction 🚧
+
+* Trying to add lumen-passport to implement security but failed
+`composer require dusterio/lumen-passport`
+* Error Log: Need PHP version 7.2 but still doesn't work even has already updated to 7.3
+`curl -s https://php-osx.liip.ch/install.sh | bash -s 7.3`
+
+
 # Lumen PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
